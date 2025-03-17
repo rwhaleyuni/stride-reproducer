@@ -1,10 +1,11 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
 apply plugin: "org.jetbrains.kotlin.android"
-apply plugin: 'io.fabric'
+//apply plugin: 'io.fabric'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: "com.google.firebase.firebase-perf"
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+apply plugin: 'com.google.firebase.crashlytics'
 
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
@@ -104,7 +105,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "io.qdivision.stride"
+    namespace "io.qdivision.reproducer"
 
     configurations {
         all*.exclude module: 'android-pdf-viewer'
@@ -112,9 +113,9 @@ android {
 
     defaultConfig {
         manifestPlaceholders = [
-              appAuthRedirectScheme: 'io.qdivision.stride'
-            ]
-        applicationId "io.qdivision.stride"
+                appAuthRedirectScheme: 'io.qdivision.reproducer'
+        ]
+        applicationId "io.qdivision.reproducer"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode buildNumber
@@ -124,6 +125,18 @@ android {
             resolutionStrategy { force 'androidx.work:work-runtime:2.6.0' }
         }
     }
+
+//    externalNativeBuild {
+//        cmake {
+//            version "3.22.1"
+//        }
+//    }
+//
+//    applicationVariants.all { variant ->
+//        variant.mergeResourcesProvider.configure {
+//            objFolder = file("$buildDir/ndkBuild/objs")  // 👈 Manually define objFolder
+//        }
+//    }
 
     splits {
         abi {
@@ -198,7 +211,7 @@ dependencies {
     }
 
     implementation project(':react-native-vector-icons')
-    implementation project(':@react-native-community_netinfo')
+//    implementation project(':@react-native-community_netinfo')
     implementation project(':react-native-blob-util')
     implementation project(':react-native-gesture-handler')
     implementation project(':instabug-reactnative')
@@ -206,9 +219,21 @@ dependencies {
     implementation project(':react-native-orientation-locker')
     implementation project(':react-native-config')
     implementation project(':react-native-pdf')
-    implementation project(':@qdivision_react-native-signature-capture')
-    implementation project(':@qdivision_react-native-pdf-view')
+//    implementation project(':@qdivision_react-native-signature-capture')
+//    implementation project(':@qdivision_react-native-pdf-view')
     implementation project(':react-native-picker_picker')
+//    plugins {
+//        // Make sure that you have the AGP plugin 8.1+ dependency
+//        id 'com.android.application' version '8.1.4' apply false
+//        // ...
+//
+//        // Make sure that you have the Google services Gradle plugin 4.4.1+ dependency
+//        id 'com.google.gms.google-services' version '4.4.2' apply false
+//
+//        // Add the dependency for the Crashlytics Gradle plugin
+//        id 'com.google.firebase.crashlytics' version '3.0.3' apply false
+//    }
+
 
 //    api (project(':@qdivision_react-native-pdf-view')) {
 //        implementation ('com.github.barteksc:android-pdf-viewer:3.1.0-beta.1') {
@@ -229,7 +254,7 @@ dependencies {
 
     api fileTree(dir: "libs", include: ["*.jar"])
 
-    implementation 'com.facebook.soloader:soloader:0.10.5+'
+    implementation 'com.facebook.soloader:soloader'
     implementation "androidx.appcompat:appcompat:${rootProject.ext.appCompatVersion}"
     // For loading and tinting drawables on older versions of the platform
     implementation "androidx.appcompat:appcompat-resources:${rootProject.ext.appCompatVersion}"

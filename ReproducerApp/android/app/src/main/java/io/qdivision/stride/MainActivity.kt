@@ -1,4 +1,4 @@
-package io.qdivision.stride
+package io.qdivision.reproducer
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -17,7 +17,7 @@ class MainActivity : ReactActivity() {
         private const val REQUEST_LOCATION_PERMISSION = 1
     }
 
-    override fun getMainComponentName(): String = "ConvergeStrideApp"
+    override fun getMainComponentName(): String = "Reproducer"
 
     override fun createReactActivityDelegate(): ReactActivityDelegate =
         DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)

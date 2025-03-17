@@ -18,9 +18,9 @@ buildscript {
             url 'https://maven.google.com/'
             name 'Google'
         }
-        maven {
-            url 'https://maven.fabric.io/public'
-        }
+//        maven {
+//            url 'https://maven.fabric.io/public'
+//        }
         maven {
             url "https://sdks.instabug.com/nexus/repository/instabug-cp"
         }
@@ -28,12 +28,25 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath 'com.google.gms:google-services:4.3.14'
-        classpath 'io.fabric.tools:gradle:1.28.1'
+        classpath 'com.google.gms:google-services:4.4.2'
+//        classpath 'io.fabric.tools:gradle:1.28.1'
         classpath 'com.google.firebase:perf-plugin:1.4.2'
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("com.google.firebase:firebase-crashlytics-gradle:3.0.3")
     }
 }
+
+//plugins {
+//    // Make sure that you have the AGP plugin 8.1+ dependency
+//    id 'com.android.application' version '8.1.4' apply false
+//    // ...
+//
+//    // Make sure that you have the Google services Gradle plugin 4.4.1+ dependency
+//    id 'com.google.gms.google-services' version '4.4.2' apply false
+//
+//    // Add the dependency for the Crashlytics Gradle plugin
+//    id 'com.google.firebase.crashlytics' version '3.0.3' apply false
+//}
 
 allprojects {
     repositories {
@@ -44,7 +57,7 @@ allprojects {
         }
 
         google()
-        jcenter()
+        mavenCentral()
 
         // Scanbot SDK Maven repositories:
         maven { url 'https://nexus.scanbot.io/nexus/content/repositories/releases/' }

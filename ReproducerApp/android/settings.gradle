@@ -1,7 +1,7 @@
 pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
 plugins { id("com.facebook.react.settings") }
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
-rootProject.name = 'ConvergeStrideApp'
+rootProject.name = 'ConvergeStrideReproducerApp'
 include ':react-native-extra-dimensions-android'
 project(':react-native-extra-dimensions-android').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-extra-dimensions-android/android')
 //include ':@react-native-picker_picker'
@@ -20,19 +20,19 @@ include ':react-native-fs'
 project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
 include ':react-native-config'
 project(':react-native-config').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-config/android')
-include ':@qdivision_react-native-pdf-view'
-project(':@qdivision_react-native-pdf-view').projectDir = new File(rootProject.projectDir, '../node_modules/@qdivision/react-native-pdf-view/android')
+//include ':@qdivision_react-native-pdf-view'
+//project(':@qdivision_react-native-pdf-view').projectDir = new File(rootProject.projectDir, '../node_modules/@qdivision/react-native-pdf-view/android')
 include ':react-native-orientation-locker', ':app'
 project(':react-native-orientation-locker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation-locker/android')
-include ':@qdivision_react-native-signature-capture'
-project(':@qdivision_react-native-signature-capture').projectDir = new File(rootProject.projectDir, '../node_modules/@qdivision/react-native-signature-capture/android')
+//include ':@qdivision_react-native-signature-capture'
+//project(':@qdivision_react-native-signature-capture').projectDir = new File(rootProject.projectDir, '../node_modules/@qdivision/react-native-signature-capture/android')
 
 include ':app'
 
 includeBuild('../node_modules/@react-native/gradle-plugin')
-if (settings.hasProperty("newArchEnabled") && settings.newArchEnabled == "true") {
-    include(":ReactAndroid")
-    project(":ReactAndroid").projectDir = file('../node_modules/react-native/ReactAndroid')
-    include(":ReactAndroid:hermes-engine")
-    project(":ReactAndroid:hermes-engine").projectDir = file('../node_modules/react-native/ReactAndroid/hermes-engine')
-}
+//if (settings.hasProperty("newArchEnabled") && settings.newArchEnabled == "true") {
+//    include(":ReactAndroid")
+//    project(":ReactAndroid").projectDir = file('../node_modules/react-native/ReactAndroid')
+//    include(":ReactAndroid:hermes-engine")
+//    project(":ReactAndroid:hermes-engine").projectDir = file('../node_modules/react-native/ReactAndroid/hermes-engine')
+//}

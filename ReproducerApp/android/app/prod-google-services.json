@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:100757184553:android:b6e5f64646c355b172fc38",
         "android_client_info": {
-          "package_name": "io.qdivision.stride"
+          "package_name": "io.qdivision.reproducer"
         }
       },
       "oauth_client": [

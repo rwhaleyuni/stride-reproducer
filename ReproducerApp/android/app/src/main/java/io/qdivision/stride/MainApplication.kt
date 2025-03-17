@@ -1,4 +1,4 @@
-package io.qdivision.stride;
+package io.qdivision.reproducer;
 
 import android.app.Application
 import com.facebook.react.PackageList
@@ -11,7 +11,6 @@ import java.util.List
 import com.facebook.react.ReactHost
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load
 import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
-import com.facebook.react.flipper.ReactNativeFlipper
 import com.facebook.react.defaults.DefaultReactNativeHost
 
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -19,8 +18,6 @@ import com.reactnativecommunity.netinfo.NetInfoPackage;
 import com.ReactNativeBlobUtil.ReactNativeBlobUtilPackage;
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 import com.rnfs.RNFSPackage;
-import com.rssignaturecapture.RSSignatureCapturePackage;
-import com.keyee.pdfview.PDFView;
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 
 class MainApplication : Application(), ReactApplication {
@@ -36,8 +33,6 @@ class MainApplication : Application(), ReactApplication {
                 packages.add(ReactNativeBlobUtilPackage())
                 packages.add(RNGestureHandlerPackage())
                 packages.add(RNFSPackage())
-                packages.add(RSSignatureCapturePackage())
-                packages.add(PDFView())
                 packages.addAll(PackageList(this).packages)
 
                 return packages
@@ -61,6 +56,5 @@ class MainApplication : Application(), ReactApplication {
             // If you opted-in for the New Architecture, we load the native entry point for this app.
             load()
         }
-        ReactNativeFlipper.initializeFlipper(this, reactNativeHost.reactInstanceManager)
     }
 }
