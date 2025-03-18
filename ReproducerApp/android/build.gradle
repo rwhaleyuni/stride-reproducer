@@ -18,9 +18,9 @@ buildscript {
             url 'https://maven.google.com/'
             name 'Google'
         }
-//        maven {
-//            url 'https://maven.fabric.io/public'
-//        }
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
         maven {
             url "https://sdks.instabug.com/nexus/repository/instabug-cp"
         }

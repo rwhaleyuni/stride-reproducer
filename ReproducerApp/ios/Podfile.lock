@@ -94,7 +94,7 @@ PODS:
     - FirebaseSharedSwift (~> 11.0)
     - GoogleUtilities/Environment (~> 8.0)
     - "GoogleUtilities/NSData+zlib (~> 8.0)"
-  - FirebaseRemoteConfigInterop (11.9.0)
+  - FirebaseRemoteConfigInterop (11.10.0)
   - FirebaseSessions (11.8.0):
     - FirebaseCore (~> 11.8.0)
     - FirebaseCoreExtension (~> 11.8.0)
@@ -104,7 +104,7 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 8.0)
     - nanopb (~> 3.30910.0)
     - PromisesSwift (~> 2.1)
-  - FirebaseSharedSwift (11.9.0)
+  - FirebaseSharedSwift (11.10.0)
   - fmt (11.0.2)
   - glog (0.3.5)
   - GoogleAppMeasurement (11.8.0):
@@ -1403,9 +1403,7 @@ PODS:
   - react-native-app-auth (8.0.0):
     - AppAuth (>= 1.7.3)
     - React-Core
-  - react-native-blob-util (0.16.4):
-    - React-Core
-  - react-native-compressor (1.10.4):
+  - react-native-blob-util (0.21.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1426,11 +1424,32 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-config (1.5.1):
-    - react-native-config/App (= 1.5.1)
-  - react-native-config/App (1.5.1):
+  - react-native-compressor (1.10.5):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
     - React-Core
-  - react-native-date-picker (4.3.3):
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - react-native-config (1.5.5):
+    - react-native-config/App (= 1.5.5)
+  - react-native-config/App (1.5.5):
+    - React-Core
+  - react-native-date-picker (4.4.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1523,7 +1542,7 @@ PODS:
     - Yoga
   - react-native-print (0.11.0):
     - React-Core
-  - react-native-safe-area-context (5.2.0):
+  - react-native-safe-area-context (5.3.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1536,8 +1555,8 @@ PODS:
     - React-featureflags
     - React-graphics
     - React-ImageManager
-    - react-native-safe-area-context/common (= 5.2.0)
-    - react-native-safe-area-context/fabric (= 5.2.0)
+    - react-native-safe-area-context/common (= 5.3.0)
+    - react-native-safe-area-context/fabric (= 5.3.0)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-rendererdebug
@@ -1546,7 +1565,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-safe-area-context/common (5.2.0):
+  - react-native-safe-area-context/common (5.3.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1567,7 +1586,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-safe-area-context/fabric (5.2.0):
+  - react-native-safe-area-context/fabric (5.3.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1897,7 +1916,7 @@ PODS:
     - React-logger (= 0.78.0)
     - React-perflogger (= 0.78.0)
     - React-utils (= 0.78.0)
-  - RNCAsyncStorage (1.23.1):
+  - RNCAsyncStorage (2.1.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1918,9 +1937,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNCClipboard (1.11.2):
-    - React-Core
-  - RNCPicker (2.7.7):
+  - RNCClipboard (1.16.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1941,7 +1958,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNDateTimePicker (8.1.1):
+  - RNCPicker (2.11.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1962,7 +1979,28 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNDeviceInfo (10.13.2):
+  - RNDateTimePicker (8.3.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNDeviceInfo (10.14.0):
     - React-Core
   - RNFBAnalytics (21.12.0):
     - Firebase/Analytics (= 11.8.0)
@@ -1987,7 +2025,7 @@ PODS:
     - RNFBApp
   - RNFS (2.20.0):
     - React-Core
-  - RNGestureHandler (2.17.1):
+  - RNGestureHandler (2.24.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1997,6 +2035,7 @@ PODS:
     - React-Core
     - React-debug
     - React-Fabric
+    - React-FabricComponents
     - React-featureflags
     - React-graphics
     - React-ImageManager
@@ -2011,7 +2050,7 @@ PODS:
   - RNInstabug (14.1.0):
     - Instabug (= 14.1.0)
     - React-Core
-  - RNLocalize (3.0.6):
+  - RNLocalize (3.4.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2151,7 +2190,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScanbotSDK (6.1.1):
+  - RNScanbotSDK (6.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2171,9 +2210,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNScanbotSDK/NONE (= 6.1.1)
+    - RNScanbotSDK/NONE (= 6.2.0)
     - Yoga
-  - RNScanbotSDK/NONE (6.1.1):
+  - RNScanbotSDK/NONE (6.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2193,7 +2232,7 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - ScanbotSDKNativeWrapper (= 6.1.1.1)
+    - ScanbotSDKNativeWrapper (= 6.2.0.1)
     - Yoga
   - RNScreens (4.9.1):
     - DoubleConversion
@@ -2240,17 +2279,17 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNSignatureCapture (0.5.4):
+  - RNSignatureCapture (0.5.3):
     - React
   - RNVectorIcons (9.2.0):
     - React-Core
-  - ScanbotSDK (6.1.1):
-    - ScanbotSDK/NONE (= 6.1.1)
-  - ScanbotSDK/NONE (6.1.1)
-  - ScanbotSDKNativeWrapper (6.1.1.1):
-    - ScanbotSDKNativeWrapper/NONE (= 6.1.1.1)
-  - ScanbotSDKNativeWrapper/NONE (6.1.1.1):
-    - ScanbotSDK (= 6.1.1)
+  - ScanbotSDK (6.2.0):
+    - ScanbotSDK/NONE (= 6.2.0)
+  - ScanbotSDK/NONE (6.2.0)
+  - ScanbotSDKNativeWrapper (6.2.0.1):
+    - ScanbotSDKNativeWrapper/NONE (= 6.2.0.1)
+  - ScanbotSDKNativeWrapper/NONE (6.2.0.1):
+    - ScanbotSDK (= 6.2.0)
   - SocketRocket (0.7.1)
   - Yoga (0.0.0)
 
@@ -2605,9 +2644,9 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 487b634ccdf6f7b7ff180fdcb2a9935490f764e8
   FirebasePerformance: 4db21c8ac5a967d38ca8625ce77f58a7abb59bc0
   FirebaseRemoteConfig: f63724461fd97f0d62f20021314b59388f3e8ef8
-  FirebaseRemoteConfigInterop: 710954a00e956c5fe5144a8e46164f0361389203
+  FirebaseRemoteConfigInterop: 7c9a9c65eff32cbb0f7bf8d18140612ad57dfcc6
   FirebaseSessions: c4d40a97f88f9eaff2834d61b4fea0a522d62123
-  FirebaseSharedSwift: 574e6a5602afe4397a55c8d4f767382d620285de
+  FirebaseSharedSwift: 1baacae75939499b5def867cbe34129464536a38
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: eb93e2f488219332457c3c4eafd2738ddc7e80b8
   GoogleAppMeasurement: fc0817122bd4d4189164f85374e06773b9561896
@@ -2650,10 +2689,10 @@ SPEC CHECKSUMS:
   React-Mapbuffer: 9fbb496e7d6f7c34d5e617365ee778bf96d14eae
   React-microtasksnativemodule: 36adde22631838680d1be62776e8ccb83186c06a
   react-native-app-auth: 58e24517e55368bee2950c5a4d0699ed80f0bff7
-  react-native-blob-util: e19bb47444b96b6c691bd1ed617449939b663c62
-  react-native-compressor: cd7972a011642dca8a9eee78a29f9b6ca1dac8b6
-  react-native-config: 136f9755ccc991cc6438053a44363259ad4c7813
-  react-native-date-picker: 9e71388600e0910b99fd109af06bfa570a06eabd
+  react-native-blob-util: d03eaad9fd1bbe90bd0eedb5bad3333215976086
+  react-native-compressor: 2bb62a9ce5c9e593e98738d1faec29dbe7c098b8
+  react-native-config: 644074ab88db883fcfaa584f03520ec29589d7df
+  react-native-date-picker: 1232d66db29e0d5e65b41cd794e485ba0b5af419
   react-native-geolocation-service: 32b2c2a3b91e70ce2a8d0c684801aaeb0a07e0ec
   react-native-image-resizer: ea0ad56591a3caa5da009dcd73a2b69f9ff92e19
   react-native-netinfo: cec9c4e86083cb5b6aba0e0711f563e2fbbff187
@@ -2661,7 +2700,7 @@ SPEC CHECKSUMS:
   react-native-pager-view: f7f13e312fd72e7b800f76ff54b2bfe736cfb366
   react-native-pdf: 735ad8762c0631325147539df7e5d4d7087d8b53
   react-native-print: 692e8782bc89872ea01738c6759631388e77358c
-  react-native-safe-area-context: 02e0f487c16ccf1acc8a666bed2318ceeb5dc14c
+  react-native-safe-area-context: 33fadf89988c8813cfac57797a3bc53708863dd1
   react-native-webview: 24958b61454dd7e72414d6f7dbf5e09d5402dda7
   React-NativeModulesApple: ec44c21ae0bbb5f9a2df72db00294e33a00e07f0
   React-perflogger: 9e8d3c0dc0194eb932162812a168aa5dc662f418
@@ -2691,30 +2730,30 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: a1fb08dfdc7ebc387b2e54cfc9decd283ed821d8
   ReactCodegen: 0f8899ac1bad260bf3b362ee848ef67a70b5a306
   ReactCommon: a30b578194de911fbe1698efb8247bfe4cb6abff
-  RNCAsyncStorage: 923af351d21a33b6c57ed32ac9c25317ddbb0dd4
-  RNCClipboard: efe1b27ad1ea378c60c8c8aabfd130961bbeb474
-  RNCPicker: 95d63ad693d039aa1e163f20a5948df13baf4acb
-  RNDateTimePicker: 0414c261904564172550c9b897d4551eb56764a9
-  RNDeviceInfo: ff9a4419a29d343280ea19a2e381bac25cb0e146
+  RNCAsyncStorage: 5321442ed26760d7581b26effab82399ea5ff18b
+  RNCClipboard: 86342298a16010051a6f2fa92688fb83dfd3f4c4
+  RNCPicker: 21ca53c5927e9a7ad03eb4712dc55395114ebcc8
+  RNDateTimePicker: 0e650fd3b08dca6e3a3b901f377e9049df804fa0
+  RNDeviceInfo: 98bb51ba1519cd3f19f14e7236b5bb1c312c780f
   RNFBAnalytics: 4c4ea0ee9c20fd7ac5412581c3c9da8e950899ed
   RNFBApp: 3ecdb44edd5cce785ea9b796682766889962a5fd
   RNFBCrashlytics: 29c9593ec907b2b1b454d16c877c282284f697cd
   RNFBMessaging: 65b436add429c5fd8fed20643c3a92916d275444
   RNFBPerf: 125f73506ed31d3f3e4e56c7d516a35e54d5023b
   RNFS: 89de7d7f4c0f6bafa05343c578f61118c8282ed8
-  RNGestureHandler: 1ed5a6b9143afad79d856f2cbf1f9ce7b9f26a27
+  RNGestureHandler: f7b3a72c099e1e29b5b81688678bc9108d44057c
   RNInstabug: 247e57d55418012a1c01849a9d988e0739e74a05
-  RNLocalize: 389938c46d574d23facec5a3aae47240950150ae
+  RNLocalize: 759649ec888d632e6d3ac50fb7756c2af777e1ae
   RNReanimated: fe5c52894886953248a81a10b2a9b6eeb5398d61
-  RNScanbotSDK: b37b36416fd26118ada7e5949c5f5a5a8383690f
+  RNScanbotSDK: 1378a2b699a47534c0054b9bb72c236f1a11d5bb
   RNScreens: fc78b9b5a1274426d7a59b7d07c272bba13604fa
-  RNSignatureCapture: 52a3ad2ae8f5849e99fe5b4e38928d4a97d7765f
+  RNSignatureCapture: 9238c162deab38ceee6a82847025d38fa230d485
   RNVectorIcons: 5784330be9dddb5474e8b378d5f6947996c84e55
-  ScanbotSDK: f789b97f4e0fd9c5a5622f52d3ec728bbdb97970
-  ScanbotSDKNativeWrapper: 769604365a56eae7e0c6e6328274ae4518946bd1
+  ScanbotSDK: c5fef1c2d36d8d1f8899d692861eb370278af0c3
+  ScanbotSDKNativeWrapper: ec412647bea4aa2e9eb8838343df5c899937c506
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: be02ca501b03c79d7027a6bbbd0a8db985034f11
 
-PODFILE CHECKSUM: 4f80ca6d93e064d62ed52253548d074df314ca70
+PODFILE CHECKSUM: 9c8cf189631fcf19b1f5c9a01d801900349536e8
 
 COCOAPODS: 1.16.2

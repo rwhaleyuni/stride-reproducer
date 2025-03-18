@@ -15,7 +15,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'ConvergeStrideApp' do
+target 'ReproducerApp' do
   use_frameworks! :linkage => :static
   config = use_native_modules!
 

@@ -24,8 +24,8 @@ project(':react-native-config').projectDir = new File(rootProject.projectDir, '.
 //project(':@qdivision_react-native-pdf-view').projectDir = new File(rootProject.projectDir, '../node_modules/@qdivision/react-native-pdf-view/android')
 include ':react-native-orientation-locker', ':app'
 project(':react-native-orientation-locker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation-locker/android')
-//include ':@qdivision_react-native-signature-capture'
-//project(':@qdivision_react-native-signature-capture').projectDir = new File(rootProject.projectDir, '../node_modules/@qdivision/react-native-signature-capture/android')
+include ':@qdivision_react-native-signature-capture'
+project(':@qdivision_react-native-signature-capture').projectDir = new File(rootProject.projectDir, '../node_modules/@qdivision/react-native-signature-capture/android')
 
 include ':app'
 
